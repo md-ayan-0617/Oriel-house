@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="portBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B2420"/>
+      <stop offset="100%" stop-color="#161210"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#portBg)"/>
+  
+  <!-- Studio Atelier Shelves behind -->
+  <line x1="100" y1="350" x2="1100" y2="350" stroke="#483B33" stroke-width="6"/>
+  <line x1="100" y1="700" x2="1100" y2="700" stroke="#483B33" stroke-width="6"/>
+  
+  <!-- Lamp prototype on shelf -->
+  <circle cx="340" cy="260" r="45" fill="#FFE5A8" opacity="0.6"/>
+  <rect x="325" y="270" width="30" height="75" fill="#A67A43"/>
+
+  <!-- Designer Silhouette Figure -->
+  <ellipse cx="680" cy="620" rx="140" ry="180" fill="#3A3029"/>
+  <path d="M 440 1400 C 440 980 540 850 680 850 C 820 850 920 980 920 1400 Z" fill="#241E1A"/>
+
+  <!-- Warm lamp spotlighting the desk -->
+  <circle cx="950" cy="800" r="280" fill="#FFDFA3" opacity="0.3"/>
+  <circle cx="950" cy="800" r="30" fill="#FFF2D6"/>
+
+  <text x="80" y="1320" font-family="'Young Serif', serif" font-size="34" fill="#F7F2E8">ALISTAIR VANCE</text>
+  <text x="80" y="1355" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#D7CDBD" letter-spacing="2">FOUNDER &amp; DESIGN DIRECTOR // STUDIO ARCHIVE</text>
+</svg>

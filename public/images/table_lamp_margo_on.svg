@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="tableBg" cx="50%" cy="50%" r="65%">
+         <stop offset="0%" stop-color="#2D211B"/>
+         <stop offset="60%" stop-color="#1E1714"/>
+         <stop offset="100%" stop-color="#140F0D"/>
+       </radialGradient>
+    <filter id="tableGlowFilter" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="35" result="blur"/>
+    </filter>
+    <filter id="margoShadow">
+      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#080605" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#tableBg)"/>
+
+  <!-- Wooden Table Horizon Line -->
+  <rect x="0" y="930" width="1200" height="270" fill="#17120F"/>
+  <line x1="0" y1="930" x2="1200" y2="930" stroke="#2B211C" stroke-width="4"/>
+
+  
+    <radialGradient id="margoGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFF2D1" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#F4B968" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#B7694C" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#1E1714" stop-opacity="0"/>
+    </radialGradient>
+    <circle cx="600" cy="460" r="380" fill="url(#margoGlow)" mix-blend-mode="screen"/>
+    <!-- Table Surface Highlight -->
+    <ellipse cx="600" cy="980" rx="380" ry="110" fill="#F4B968" opacity="0.3" filter="url(#tableGlowFilter)"/>
+  
+
+  <!-- MARGO TABLE LAMP -->
+  <!-- Honed Travertine / Marble Plinth -->
+  <rect x="460" y="880" width="280" height="60" rx="8" fill="#3A2E26" filter="url(#margoShadow)"/>
+  
+  <!-- Turned Aged Brass Stem -->
+  <rect x="580" y="660" width="40" height="220" fill="#D9A95C" filter="url(#margoShadow)"/>
+  <ellipse cx="600" cy="740" rx="55" ry="15" fill="#F2C679"/>
+
+  <!-- Mouth-Blown Opal Glass Mushroom Dome -->
+  <path d="M 320 540 C 320 330 440 280 600 280 C 760 280 880 330 880 540 C 880 580 820 620 600 620 C 380 620 320 580 320 540 Z" 
+        fill="#FFF9EE" 
+        stroke="#EAD6B3" 
+        stroke-width="4" 
+        filter="url(#margoShadow)"/>
+
+  <!-- Brass Finial Cap -->
+  <circle cx="600" cy="275" r="22" fill="#F4C87B"/>
+  <rect x="594" y="250" width="12" height="25" rx="4" fill="#E5B460"/>
+
+  <text x="60" y="1140" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#968A7D" letter-spacing="2">
+    MARGO TABLE LAMP // WARM DIFFUSED OPAL EMISSION
+  </text>
+</svg>

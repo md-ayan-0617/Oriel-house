@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <filter id="glassBlur"><feGaussianBlur stdDeviation="45"/></filter>
+  </defs>
+  
+        <defs>
+          <radialGradient id="opalGrad" cx="50%" cy="50%" r="60%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="40%" stop-color="#FBF7EE"/>
+            <stop offset="75%" stop-color="#EBE2D3"/>
+            <stop offset="100%" stop-color="#CFC2AF"/>
+          </radialGradient>
+        </defs>
+        <rect width="1200" height="1200" fill="url(#opalGrad)"/>
+        <circle cx="600" cy="600" r="450" fill="#FFF" opacity="0.4" filter="url(#glassBlur)"/>
+      
+  <rect x="0" y="1040" width="1200" height="160" fill="#1E1C1A" opacity="0.8"/>
+  <text x="60" y="1120" font-family="'Young Serif', serif" font-size="34" fill="#F7F2E8">MOUTH-BLOWN OPAL</text>
+  <text x="60" y="1160" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#D7CDBD" letter-spacing="2">CASED MILK GLASS / 2700K DIFFUSION</text>
+</svg>

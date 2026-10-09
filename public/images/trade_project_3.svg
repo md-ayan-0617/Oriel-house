@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="tradeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A222E"/>
+      <stop offset="60%" stop-color="#131821"/>
+      <stop offset="100%" stop-color="#0E1218"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#tradeGrad)"/>
+
+  <!-- Architectural Colonnade / Arches -->
+  <g fill="none" stroke="#2D3A4D" stroke-width="8">
+    <path d="M 200 900 L 200 400 A 150 150 0 0 1 500 400 L 500 900"/>
+    <path d="M 650 900 L 650 400 A 150 150 0 0 1 950 400 L 950 900"/>
+    <path d="M 1100 900 L 1100 400 A 150 150 0 0 1 1400 400 L 1400 900"/>
+  </g>
+
+  <!-- Sconces mounted in each arch bay with luminous warm glows -->
+  <g>
+    <circle cx="350" cy="500" r="160" fill="#FFDFA3" opacity="0.35"/>
+    <rect x="335" y="460" width="30" height="90" rx="15" fill="#E9C978"/>
+    
+    <circle cx="800" cy="500" r="160" fill="#FFDFA3" opacity="0.35"/>
+    <rect x="785" y="460" width="30" height="90" rx="15" fill="#E9C978"/>
+    
+    <circle cx="1250" cy="500" r="160" fill="#FFDFA3" opacity="0.35"/>
+    <rect x="1235" y="460" width="30" height="90" rx="15" fill="#E9C978"/>
+  </g>
+
+  <!-- Flooring Horizon -->
+  <rect x="0" y="860" width="1600" height="140" fill="#0A0D12"/>
+
+  <!-- Info Overlay -->
+  <rect x="80" y="760" width="540" height="150" fill="#171C26" opacity="0.9" rx="6"/>
+  <text x="120" y="810" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#91A8BB" letter-spacing="2">PROJECT SPECIFICATION // MELBOURNE</text>
+  <text x="120" y="850" font-family="'DM Serif Display', serif" font-size="30" fill="#F7F2E8">THE ARCHITECTURAL RESIDENCE</text>
+  <text x="120" y="885" font-family="'Manrope', sans-serif" font-size="14" fill="#D7CDBD">Specified: ELEANOR FLOOR FIXTURES & ADRIENNE FLUSH</text>
+</svg>

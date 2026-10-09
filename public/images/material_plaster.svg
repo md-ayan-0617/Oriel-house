@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <filter id="glassBlur"><feGaussianBlur stdDeviation="45"/></filter>
+  </defs>
+  
+        <defs>
+          <linearGradient id="plasterGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FAF5EC"/>
+            <stop offset="50%" stop-color="#EDE4D5"/>
+            <stop offset="100%" stop-color="#DCD0BD"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="1200" fill="url(#plasterGrad)"/>
+        <!-- Trowel stroke textures -->
+        <path d="M 0 300 Q 400 240 800 320 T 1200 290" fill="none" stroke="#D3C3AD" stroke-width="45" opacity="0.35"/>
+        <path d="M 0 650 Q 500 700 900 620 T 1200 660" fill="none" stroke="#D3C3AD" stroke-width="60" opacity="0.3"/>
+        <path d="M 0 980 Q 600 940 1200 990" fill="none" stroke="#D3C3AD" stroke-width="40" opacity="0.25"/>
+      
+  <rect x="0" y="1040" width="1200" height="160" fill="#1E1C1A" opacity="0.8"/>
+  <text x="60" y="1120" font-family="'Young Serif', serif" font-size="34" fill="#F7F2E8">MINERAL PLASTER</text>
+  <text x="60" y="1160" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#D7CDBD" letter-spacing="2">HAND-TROWELLED / CHALK TEXTURE</text>
+</svg>

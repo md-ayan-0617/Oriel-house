@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs><radialGradient id="adrBg" cx="50%" cy="50%" r="65%">
+         <stop offset="0%" stop-color="#3D3228"/>
+         <stop offset="60%" stop-color="#241E18"/>
+         <stop offset="100%" stop-color="#14110E"/>
+       </radialGradient></defs>
+  <rect width="1200" height="1200" fill="url(#adrBg)"/>
+  
+    <radialGradient id="adrGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5DC" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#F4B968" stop-opacity="0.5"/>
+      <stop offset="80%" stop-color="#873B35" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#14110E" stop-opacity="0"/>
+    </radialGradient>
+    <circle cx="600" cy="600" r="420" fill="url(#adrGlow)" mix-blend-mode="screen"/>
+  
+
+  <!-- Outer Aged Brass Ring -->
+  <circle cx="600" cy="600" r="320" fill="#D4A35B"/>
+  
+  <!-- Carved Spanish Alabaster / Plaster Disc -->
+  <circle cx="600" cy="600" r="280" fill="#FFF9EC" stroke="#EAD1A0" stroke-width="6"/>
+
+  <!-- Alabaster Mineral Veining -->
+  <path d="M 420 540 Q 560 520 680 580 T 780 660" fill="none" stroke="#F2D7A5" stroke-width="8" opacity="0.6"/>
+  <path d="M 460 670 Q 580 630 720 640" fill="none" stroke="#F2D7A5" stroke-width="6" opacity="0.5"/>
+
+  <!-- Center Solid Brass Stud -->
+  <circle cx="600" cy="600" r="38" fill="#F5CB78"/>
+
+  <text x="60" y="1140" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#9B8D7F" letter-spacing="2">
+    ADRIENNE FLUSH MOUNT // LOW CEILING DIFFUSED GLOW
+  </text>
+</svg>

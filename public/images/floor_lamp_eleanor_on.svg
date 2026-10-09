@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs><radialGradient id="eleanorBg" cx="60%" cy="40%" r="65%">
+         <stop offset="0%" stop-color="#342823"/>
+         <stop offset="60%" stop-color="#1F1815"/>
+         <stop offset="100%" stop-color="#120E0C"/>
+       </radialGradient></defs>
+  <rect width="1200" height="1200" fill="url(#eleanorBg)"/>
+  
+    <radialGradient id="eleanorGlow" cx="62%" cy="32%" r="45%">
+      <stop offset="0%" stop-color="#FFF2D6" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#F4B968" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#873B35" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#120E0C" stop-opacity="0"/>
+    </radialGradient>
+    <circle cx="740" cy="380" r="320" fill="url(#eleanorGlow)" mix-blend-mode="screen"/>
+    <ellipse cx="740" cy="980" rx="260" ry="70" fill="#F4B968" opacity="0.25"/>
+  
+
+  <!-- Base Plate (Cast Iron / Bronze) -->
+  <ellipse cx="480" cy="1000" rx="140" ry="30" fill="#2B221D"/>
+
+  <!-- Sweeping Asymmetrical Brass Arch -->
+  <path d="M 480 1000 C 480 500 560 220 740 280" fill="none" stroke="#D4A35B" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Counterweight Sphere -->
+  <circle cx="480" cy="560" r="28" fill="#F2C679"/>
+
+  <!-- Conical Pivoting Lamp Shade -->
+  <path d="M 680 340 L 800 340 L 840 430 L 640 430 Z" fill="#FFF6E0" stroke="#E5BA6E" stroke-width="4"/>
+  <ellipse cx="740" cy="430" rx="100" ry="25" fill="#FFFAEE"/>
+
+  <text x="60" y="1140" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#9B8B7F" letter-spacing="2">
+    ELEANOR FLOOR LAMP // ARCHITECTURAL READING POOL
+  </text>
+</svg>

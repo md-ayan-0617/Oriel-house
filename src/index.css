@@ -1,0 +1,380 @@
+/* =====================================================
+   ORIEL HOUSE — CORE DESIGN SYSTEM & DOMESTIC THEATRE
+   ===================================================== */
+
+:root {
+  /* Core Palette */
+  --parchment: #F0E9DD;
+  --warm-ivory: #F7F2E8;
+  --ink: #1E1C1A;
+  --espresso: #28201C;
+  --charcoal: #34302D;
+  --linen: #D7CDBD;
+  --stone: #AAA092;
+
+  /* Accents */
+  --oxblood: #873B35;
+  --butter: #E9C978;
+  --olive: #687057;
+  --powder-blue: #91A8BB;
+  --plum: #675466;
+  --terracotta: #B7694C;
+  --brass: #A67A43;
+  --night-blue: #26344A;
+
+  /* Glow Values */
+  --warm-light: #FFDFA3;
+  --candle: #F4B968;
+  --cool-moon: #BDD3E6;
+
+  /* Dynamic Active Theme Variables (Default: AFTERNOON) */
+  --bg-current: var(--warm-ivory);
+  --text-current: var(--ink);
+  --accent-current: var(--olive);
+  --card-bg: rgba(240, 233, 221, 0.45);
+  --border-subtle: rgba(30, 28, 26, 0.12);
+  --glow-current: var(--warm-light);
+
+  /* Typography Stacks */
+  --font-theater: 'DM Serif Display', Georgia, serif;
+  --font-personality: 'Young Serif', serif;
+  --font-ui: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* Typographic Scales */
+  --text-mega: clamp(105px, 14vw, 230px);
+  --text-hero: clamp(80px, 10vw, 170px);
+  --text-h1: clamp(62px, 8vw, 125px);
+  --text-h2: clamp(46px, 5.5vw, 90px);
+  --text-product-hero: clamp(48px, 6vw, 74px);
+  --text-room: clamp(68px, 9vw, 145px);
+  --text-body-lg: clamp(20px, 2vw, 27px);
+  --text-body: clamp(16px, 1.4vw, 19px);
+  --text-mono: clamp(10px, 1vw, 13px);
+
+  /* Transitions */
+  --ease-theater: cubic-bezier(0.25, 1, 0.5, 1);
+  --transition-light: background-color 0.85s var(--ease-theater), color 0.85s var(--ease-theater), border-color 0.85s var(--ease-theater);
+}
+
+/* 09 — GLOBAL LIGHT STATES */
+[data-theme="morning"] {
+  --bg-current: var(--parchment);
+  --text-current: var(--ink);
+  --accent-current: var(--powder-blue);
+  --card-bg: rgba(247, 242, 232, 0.6);
+  --border-subtle: rgba(30, 28, 26, 0.1);
+  --glow-current: var(--cool-moon);
+}
+
+[data-theme="afternoon"] {
+  --bg-current: var(--warm-ivory);
+  --text-current: var(--ink);
+  --accent-current: var(--olive);
+  --card-bg: rgba(240, 233, 221, 0.6);
+  --border-subtle: rgba(30, 28, 26, 0.1);
+  --glow-current: var(--warm-light);
+}
+
+[data-theme="golden"] {
+  --bg-current: #EFE4D0;
+  --text-current: var(--espresso);
+  --accent-current: var(--terracotta);
+  --card-bg: rgba(233, 201, 120, 0.15);
+  --border-subtle: rgba(183, 105, 76, 0.2);
+  --glow-current: var(--butter);
+}
+
+[data-theme="evening"] {
+  --bg-current: var(--espresso);
+  --text-current: var(--warm-ivory);
+  --accent-current: var(--oxblood);
+  --card-bg: rgba(52, 48, 45, 0.65);
+  --border-subtle: rgba(247, 242, 232, 0.15);
+  --glow-current: var(--warm-light);
+}
+
+[data-theme="midnight"] {
+  --bg-current: var(--charcoal);
+  --text-current: var(--parchment);
+  --accent-current: var(--brass);
+  --card-bg: rgba(38, 52, 74, 0.4);
+  --border-subtle: rgba(240, 233, 221, 0.12);
+  --glow-current: var(--cool-moon);
+}
+
+/* Base Styles & Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-ui);
+  font-size: 16px;
+  background-color: var(--bg-current);
+  color: var(--text-current);
+  transition: var(--transition-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: auto !important; /* Managed by Lenis */
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: var(--bg-current);
+  color: var(--text-current);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--oxblood);
+  color: var(--warm-ivory);
+}
+
+/* Typography Utility Classes */
+.font-theater {
+  font-family: var(--font-theater);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+}
+
+.font-personality {
+  font-family: var(--font-personality);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.font-ui {
+  font-family: var(--font-ui);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Typography Scales */
+.text-mega {
+  font-size: var(--text-mega);
+  line-height: 0.95;
+  letter-spacing: -0.03em;
+}
+
+.text-hero {
+  font-size: var(--text-hero);
+  line-height: 0.98;
+}
+
+.text-h1 {
+  font-size: var(--text-h1);
+  line-height: 1.05;
+}
+
+.text-h2 {
+  font-size: var(--text-h2);
+  line-height: 1.1;
+}
+
+.text-body-lg {
+  font-size: var(--text-body-lg);
+  line-height: 1.45;
+}
+
+.text-body {
+  font-size: var(--text-body);
+  line-height: 1.6;
+}
+
+.text-mono-sm {
+  font-size: var(--text-mono);
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+}
+
+/* Links & Buttons (No rounded pills, rectangular/architectural) */
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  font-family: var(--font-ui);
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: var(--text-current);
+  color: var(--bg-current);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--text-current);
+  transition: all 0.35s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--oxblood);
+  color: var(--warm-ivory);
+  border-color: var(--oxblood);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: transparent;
+  color: var(--text-current);
+  border: 1px solid var(--text-current);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: all 0.35s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--text-current);
+  color: var(--bg-current);
+}
+
+.btn-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--text-current);
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-text:hover {
+  color: var(--oxblood);
+  border-color: var(--oxblood);
+}
+
+/* Custom Cursor Elements */
+.custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background-color: var(--oxblood);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-cursor-halo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 44px;
+  height: 44px;
+  background: radial-gradient(circle, var(--glow-current) 0%, rgba(255, 223, 163, 0) 70%);
+  border: 1px solid rgba(166, 122, 67, 0.25);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+[data-theme="evening"] .custom-cursor-halo,
+[data-theme="midnight"] .custom-cursor-halo {
+  mix-blend-mode: screen;
+  border-color: rgba(255, 223, 163, 0.4);
+}
+
+.custom-cursor-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--text-current);
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+/* Hide custom cursor on touch devices */
+@media (pointer: coarse) {
+  .custom-cursor-dot,
+  .custom-cursor-halo,
+  .custom-cursor-text {
+    display: none !important;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .custom-cursor-dot,
+  .custom-cursor-halo {
+    display: none !important;
+  }
+}
+
+/* Utilities for Layout */
+.container-wide {
+  width: 100%;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 80px);
+}
+
+.container-narrow {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+}
+
+.rule-subtle {
+  border: none;
+  height: 1px;
+  background-color: var(--border-subtle);
+  margin: 0;
+}
+
+/* Ambient glow container */
+.ambient-glow-circle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+  z-index: 0;
+}

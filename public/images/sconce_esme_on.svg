@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="wallWash" cx="50%" cy="50%" r="70%">
+         <stop offset="0%" stop-color="#3A2D27"/>
+         <stop offset="50%" stop-color="#241E1C"/>
+         <stop offset="100%" stop-color="#181514"/>
+       </radialGradient>
+    <filter id="sconceGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="15" dy="25" stdDeviation="18" flood-color="#0C0A09" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#wallWash)"/>
+  
+  
+    <!-- Dual Arch Light Wash Up and Down -->
+    <radialGradient id="lightBeamUp" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#FFE7B8" stop-opacity="0.95"/>
+      <stop offset="30%" stop-color="#F4B968" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#B7694C" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#241E1C" stop-opacity="0"/>
+    </radialGradient>
+    <ellipse cx="600" cy="280" rx="360" ry="240" fill="url(#lightBeamUp)" mix-blend-mode="screen"/>
+    <ellipse cx="600" cy="920" rx="420" ry="260" fill="url(#lightBeamUp)" mix-blend-mode="screen"/>
+    <circle cx="600" cy="580" r="160" fill="#FFF4D9" opacity="0.85" filter="url(#sconceGlow)"/>
+  
+
+  <!-- Limewash plaster texture lines -->
+  <g stroke="#382D28" stroke-width="1" opacity="0.35">
+    <path d="M 100 200 Q 600 220 1100 190" fill="none"/>
+    <path d="M 80 500 Q 550 510 1120 480" fill="none"/>
+    <path d="M 120 850 Q 650 840 1080 870" fill="none"/>
+  </g>
+
+  <!-- ESME SCONCE BODY -->
+  <!-- Aged Brass Backplate -->
+  <rect x="560" y="380" width="80" height="440" rx="40" fill="#C89A50" filter="url(#shadow)"/>
+  
+  <!-- Sculptural Plaster Curved Canopy / Shell -->
+  <path d="M 440 600 C 440 450 540 410 600 410 C 660 410 760 450 760 600 C 760 750 660 790 600 790 C 540 790 440 750 440 600 Z" 
+        fill="#FFF7E6" 
+        stroke="#D7B47C" 
+        stroke-width="5" 
+        filter="url(#shadow)"/>
+
+  <!-- Inner Recessed Diffuser Aperture -->
+  <ellipse cx="600" cy="600" rx="55" ry="95" fill="#FFF9EE"/>
+
+  <!-- Aged Unlacquered Brass Center Pin / Fastener -->
+  <circle cx="600" cy="600" r="18" fill="#F2C679"/>
+  <circle cx="600" cy="600" r="8" fill="#FFE7B3"/>
+
+  <!-- Subtle Model Metadata Stamp -->
+  <text x="60" y="1140" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#968A7D" letter-spacing="2">
+    ESME WALL SCONCE // 2700K CAST HALO ACTIVE
+  </text>
+</svg>

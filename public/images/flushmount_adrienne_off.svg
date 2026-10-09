@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs><linearGradient id="adrBg" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" stop-color="#EFE8DE"/>
+         <stop offset="100%" stop-color="#DCD2C3"/>
+       </linearGradient></defs>
+  <rect width="1200" height="1200" fill="url(#adrBg)"/>
+  
+
+  <!-- Outer Aged Brass Ring -->
+  <circle cx="600" cy="600" r="320" fill="#946E3A"/>
+  
+  <!-- Carved Spanish Alabaster / Plaster Disc -->
+  <circle cx="600" cy="600" r="280" fill="#EDE4D6" stroke="#C7B9A5" stroke-width="6"/>
+
+  <!-- Alabaster Mineral Veining -->
+  <path d="M 420 540 Q 560 520 680 580 T 780 660" fill="none" stroke="#D2C4B1" stroke-width="8" opacity="0.6"/>
+  <path d="M 460 670 Q 580 630 720 640" fill="none" stroke="#D2C4B1" stroke-width="6" opacity="0.5"/>
+
+  <!-- Center Solid Brass Stud -->
+  <circle cx="600" cy="600" r="38" fill="#7A5726"/>
+
+  <text x="60" y="1140" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#7A6E62" letter-spacing="2">
+    ADRIENNE FLUSH MOUNT // CARVED ALABASTER & SOLID BRASS
+  </text>
+</svg>

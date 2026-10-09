@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <filter id="glassBlur"><feGaussianBlur stdDeviation="45"/></filter>
+  </defs>
+  
+        <defs>
+          <linearGradient id="marbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#EDE6DA"/>
+            <stop offset="100%" stop-color="#DFD5C6"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="1200" fill="url(#marbGrad)"/>
+        <!-- Dramatic Calacatta Viola veins -->
+        <path d="M 120 0 Q 300 340 480 620 T 980 1200" fill="none" stroke="#682928" stroke-width="28" stroke-linecap="round" opacity="0.75"/>
+        <path d="M 280 200 Q 420 380 460 520" fill="none" stroke="#873B35" stroke-width="12" opacity="0.6"/>
+        <path d="M 700 700 Q 820 900 1100 1020" fill="none" stroke="#4D1E1E" stroke-width="18" opacity="0.7"/>
+      
+  <rect x="0" y="1040" width="1200" height="160" fill="#1E1C1A" opacity="0.8"/>
+  <text x="60" y="1120" font-family="'Young Serif', serif" font-size="34" fill="#F7F2E8">CALACATTA VIOLA</text>
+  <text x="60" y="1160" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#D7CDBD" letter-spacing="2">HONED STONE / DEEP BURGUNDY VEIN</text>
+</svg>

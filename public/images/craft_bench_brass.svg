@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="benchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D231E"/>
+      <stop offset="100%" stop-color="#191310"/>
+    </linearGradient>
+    <linearGradient id="benchTop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5A4739"/>
+      <stop offset="50%" stop-color="#46362B"/>
+      <stop offset="100%" stop-color="#2E221B"/>
+    </linearGradient>
+    <linearGradient id="polishedBrass" x1="0%" y1="0%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#FFF0CC"/>
+      <stop offset="25%" stop-color="#F2D184"/>
+      <stop offset="60%" stop-color="#BA8B3D"/>
+      <stop offset="85%" stop-color="#6F4D17"/>
+      <stop offset="100%" stop-color="#D4A755"/>
+    </linearGradient>
+    <radialGradient id="benchLight" cx="45%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#FFEBB8" stop-opacity="0.8"/>
+      <stop offset="45%" stop-color="#E9C978" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#E9C978" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#benchBg)"/>
+
+  <!-- Ambient Light Cone from Overhanging Studio Shade -->
+  <circle cx="560" cy="240" r="480" fill="url(#benchLight)"/>
+
+  <!-- Workshop Pegboard & Wall Tools -->
+  <g opacity="0.35">
+    <pattern id="pegboard" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="2.5" fill="#4A3D34"/>
+    </pattern>
+    <rect x="0" y="0" width="1200" height="380" fill="url(#pegboard)"/>
+    <!-- Hanging Spanners & Calipers -->
+    <path d="M 180 80 L 180 220 M 170 90 L 190 90" stroke="#7A6658" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 280 60 L 280 240 M 270 70 L 290 70" stroke="#7A6658" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 980 90 Q 940 180 980 250" fill="none" stroke="#7A6658" stroke-width="4"/>
+  </g>
+
+  <!-- Heavy Oak Craftsman Workbench Top -->
+  <rect x="0" y="440" width="1200" height="360" fill="url(#benchTop)"/>
+  <line x1="0" y1="440" x2="1200" y2="440" stroke="#7C6552" stroke-width="3"/>
+  <!-- Gouges & Scratches on Timber for tactile reality -->
+  <path d="M 140 480 Q 220 484 310 481" stroke="#221812" stroke-width="2" opacity="0.6"/>
+  <path d="M 640 510 Q 720 508 860 512" stroke="#221812" stroke-width="2" opacity="0.6"/>
+
+  <!-- Hand-Machined Brass Cylinders & Components on Bench -->
+  <g id="brassComponents">
+    <!-- Turned Sconce Backplate -->
+    <ellipse cx="600" cy="560" rx="140" ry="70" fill="url(#polishedBrass)"/>
+    <ellipse cx="600" cy="560" rx="110" ry="55" fill="#3D2E1C"/>
+    <ellipse cx="600" cy="560" rx="90" ry="45" fill="url(#polishedBrass)"/>
+    <circle cx="600" cy="560" r="18" fill="#1C140D"/>
+
+    <!-- Solid Turned Brass Spindle -->
+    <path d="M 240 590 L 460 590 L 460 635 L 240 635 Z" fill="url(#polishedBrass)"/>
+    <ellipse cx="240" cy="612" rx="12" ry="22.5" fill="#6F4D17"/>
+    <ellipse cx="460" cy="612" rx="12" ry="22.5" fill="#FFF0CC"/>
+
+    <!-- Artisan Calipers Measuring Dimension -->
+    <path d="M 520 450 Q 580 500 590 540" fill="none" stroke="#D7CDBD" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 680 450 Q 620 500 610 540" fill="none" stroke="#D7CDBD" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="600" cy="460" r="10" fill="#873B35"/>
+  </g>
+
+  <!-- Linen Polishing Cloth -->
+  <path d="M 800 600 Q 860 560 920 610 Q 980 640 940 680 Q 880 700 810 660 Z" fill="#D7CDBD" opacity="0.85"/>
+
+  <!-- Studio Label -->
+  <text x="60" y="740" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#E9C978" letter-spacing="3">
+    FIG. 04 // BENCH PATINA &amp; LATHE TURNING // GRADE-CZ121 SOLID BRASS
+  </text>
+</svg>

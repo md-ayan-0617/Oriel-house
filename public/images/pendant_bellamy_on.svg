@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="pendBg" cx="50%" cy="40%" r="65%">
+         <stop offset="0%" stop-color="#262F3D"/>
+         <stop offset="60%" stop-color="#181D26"/>
+         <stop offset="100%" stop-color="#0F1218"/>
+       </radialGradient>
+    <filter id="pendBlur">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#pendBg)"/>
+
+  
+    <!-- Downward Dramatic Light Cone onto Table -->
+    <linearGradient id="coneGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0CC" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#F4B968" stop-opacity="0.45"/>
+      <stop offset="85%" stop-color="#D7CDBD" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0F1218" stop-opacity="0"/>
+    </linearGradient>
+    <polygon points="600,430 180,1180 1020,1180" fill="url(#coneGrad)" mix-blend-mode="screen"/>
+    <ellipse cx="600" cy="420" r="140" fill="#FFF5D6" opacity="0.9" filter="url(#pendBlur)"/>
+  
+
+  <!-- Suspension Cord & Brass Canopy -->
+  <rect x="575" y="0" width="50" height="25" fill="#C89A50"/>
+  <line x1="600" y1="25" x2="600" y2="340" stroke="#D4A35B" stroke-width="4"/>
+
+  <!-- Tiered Tier 1: Wide Fluted Tier -->
+  <path d="M 360 410 C 360 370 500 350 600 350 C 700 350 840 370 840 410 C 840 430 760 450 600 450 C 440 450 360 430 360 410 Z" 
+        fill="#F5D38A"/>
+
+  <!-- Tier 2: Fluted Frosted Glass Disk -->
+  <ellipse cx="600" cy="440" rx="300" ry="45" fill="#FFF9EA" stroke="#E2BF7A" stroke-width="4"/>
+
+  <!-- Tier 3: Bottom Opal Glass Orb -->
+  <circle cx="600" cy="490" r="75" fill="#FFFDF5" stroke="#F4C87B" stroke-width="3"/>
+
+  <!-- Meta Brand -->
+  <text x="60" y="1140" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#8B97A8" letter-spacing="2">
+    BELLAMY PENDANT // FOCUSED DINING TABLE LUMINESCENCE
+  </text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D2824"/>
+      <stop offset="100%" stop-color="#1A1715"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  
+  <!-- Workbench Timber Surface -->
+  <rect x="0" y="480" width="1200" height="420" fill="#3D3027"/>
+  <line x1="0" y1="480" x2="1200" y2="480" stroke="#5E4B3E" stroke-width="4"/>
+
+  <!-- Workbench Artisan Tools & Objects -->
+  <!-- Brass Caliper -->
+  <line x1="240" y1="620" x2="440" y2="760" stroke="#A67A43" stroke-width="12" stroke-linecap="round"/>
+  <line x1="280" y1="650" x2="480" y2="790" stroke="#A67A43" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Raw Turned Brass Shade Component -->
+  <circle cx="720" cy="640" r="130" fill="#C59B58" stroke="#876229" stroke-width="8"/>
+  <circle cx="720" cy="640" r="60" fill="#2D2824"/>
+
+  <!-- Technical Drawing Sketches / Paper -->
+  <polygon points="880,520 1140,560 1080,780 820,740" fill="#EAE2D5" stroke="#C7BBAA" stroke-width="3"/>
+  <line x1="860" y1="580" x2="1040" y2="610" stroke="#7A6F62" stroke-width="2"/>
+  <line x1="870" y1="620" x2="1010" y2="645" stroke="#7A6F62" stroke-width="2"/>
+
+  <!-- Window Natural Raking Sunlight -->
+  <polygon points="120,0 420,0 720,480 320,480" fill="#FFF7EB" opacity="0.08"/>
+
+  <!-- Caption Plaque -->
+  <rect x="50" y="50" width="340" height="90" fill="#14110F" opacity="0.85" rx="4"/>
+  <text x="75" y="88" font-family="'IBM Plex Mono', monospace" font-size="12" fill="#E9C978" letter-spacing="2">FIG. 02 // CRAFT ARCHIVE</text>
+  <text x="75" y="118" font-family="'Young Serif', serif" font-size="18" fill="#F7F2E8">SURFACE ABRASION & PATINA</text>
+</svg>

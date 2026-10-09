@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pendBg" x1="0%" y1="0%" x2="100%" y2="100%">
+         <stop offset="0%" stop-color="#EFE8DD"/>
+         <stop offset="100%" stop-color="#DCD0C0"/>
+       </linearGradient>
+    <filter id="pendBlur">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1200" fill="url(#pendBg)"/>
+
+  
+
+  <!-- Suspension Cord & Brass Canopy -->
+  <rect x="575" y="0" width="50" height="25" fill="#8F6A33"/>
+  <line x1="600" y1="25" x2="600" y2="340" stroke="#735730" stroke-width="4"/>
+
+  <!-- Tiered Tier 1: Wide Fluted Tier -->
+  <path d="M 360 410 C 360 370 500 350 600 350 C 700 350 840 370 840 410 C 840 430 760 450 600 450 C 440 450 360 430 360 410 Z" 
+        fill="#A67A43"/>
+
+  <!-- Tier 2: Fluted Frosted Glass Disk -->
+  <ellipse cx="600" cy="440" rx="300" ry="45" fill="#ECE5DB" stroke="#C4B7A5" stroke-width="4"/>
+
+  <!-- Tier 3: Bottom Opal Glass Orb -->
+  <circle cx="600" cy="490" r="75" fill="#E8DFD0" stroke="#BFB09D" stroke-width="3"/>
+
+  <!-- Meta Brand -->
+  <text x="60" y="1140" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#7A6E62" letter-spacing="2">
+    BELLAMY PENDANT // SCULPTURAL FLUTED BRASS & GLASS
+  </text>
+</svg>

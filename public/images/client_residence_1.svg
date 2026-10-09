@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cotswoldWall" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C7BBA7"/>
+      <stop offset="100%" stop-color="#A89B85"/>
+    </linearGradient>
+    <radialGradient id="pendantWarmth" cx="50%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#FFE0A0" stop-opacity="0.85"/>
+      <stop offset="50%" stop-color="#E9C978" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E9C978" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#cotswoldWall)"/>
+
+  <!-- Timber Ceiling Beams -->
+  <rect x="0" y="40" width="1200" height="40" fill="#3A2D23"/>
+  <rect x="0" y="140" width="1200" height="35" fill="#3A2D23"/>
+
+  <!-- Dining Table in Dusk -->
+  <polygon points="150,560 1050,560 1120,680 80,680" fill="#2E241D"/>
+  <rect x="180" y="680" width="40" height="120" fill="#1D1611"/>
+  <rect x="980" y="680" width="40" height="120" fill="#1D1611"/>
+
+  <!-- Light Glow on Table -->
+  <circle cx="600" cy="380" r="380" fill="url(#pendantWarmth)"/>
+
+  <!-- Bellamy Pendant Suspended -->
+  <line x1="600" y1="140" x2="600" y2="340" stroke="#E9C978" stroke-width="4"/>
+  <path d="M 460 380 Q 600 320 740 380 Z" fill="#E9C978"/>
+  <circle cx="600" cy="405" r="36" fill="#FFF9ED"/>
+
+  <!-- Table Details: Candles & Wine Glass Silhouettes -->
+  <rect x="420" y="525" width="6" height="35" fill="#F7F2E8"/>
+  <circle cx="423" cy="518" r="5" fill="#FFA500"/>
+  <rect x="780" y="525" width="6" height="35" fill="#F7F2E8"/>
+  <circle cx="783" cy="518" r="5" fill="#FFA500"/>
+
+  <text x="60" y="740" font-family="'IBM Plex Mono', monospace" font-size="13" fill="#F7F2E8" letter-spacing="2">
+    PROJECT: COTSWOLDS STONE RESIDENCE // FIXTURE: BELLAMY PENDANT &amp; LUCIEN CANDLE
+  </text>
+</svg>

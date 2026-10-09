@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="100%" height="100%">
+  <defs>
+    <filter id="glassBlur"><feGaussianBlur stdDeviation="45"/></filter>
+  </defs>
+  
+        <defs>
+          <linearGradient id="oakGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#735A49"/>
+            <stop offset="50%" stop-color="#5E4738"/>
+            <stop offset="100%" stop-color="#4B372B"/>
+          </linearGradient>
+        </defs>
+        <rect width="1200" height="1200" fill="url(#oakGrad)"/>
+        <!-- Rich organic wood rings -->
+        <g stroke="#3B2A20" stroke-width="3" opacity="0.5">
+          <path d="M 0 0 Q 600 25 1200 0" fill="none"/><path d="M 0 48 Q 600 73 1200 48" fill="none"/><path d="M 0 96 Q 600 121 1200 96" fill="none"/><path d="M 0 144 Q 600 169 1200 144" fill="none"/><path d="M 0 192 Q 600 217 1200 192" fill="none"/><path d="M 0 240 Q 600 265 1200 240" fill="none"/><path d="M 0 288 Q 600 313 1200 288" fill="none"/><path d="M 0 336 Q 600 361 1200 336" fill="none"/><path d="M 0 384 Q 600 409 1200 384" fill="none"/><path d="M 0 432 Q 600 457 1200 432" fill="none"/><path d="M 0 480 Q 600 505 1200 480" fill="none"/><path d="M 0 528 Q 600 553 1200 528" fill="none"/><path d="M 0 576 Q 600 601 1200 576" fill="none"/><path d="M 0 624 Q 600 649 1200 624" fill="none"/><path d="M 0 672 Q 600 697 1200 672" fill="none"/><path d="M 0 720 Q 600 745 1200 720" fill="none"/><path d="M 0 768 Q 600 793 1200 768" fill="none"/><path d="M 0 816 Q 600 841 1200 816" fill="none"/><path d="M 0 864 Q 600 889 1200 864" fill="none"/><path d="M 0 912 Q 600 937 1200 912" fill="none"/><path d="M 0 960 Q 600 985 1200 960" fill="none"/><path d="M 0 1008 Q 600 1033 1200 1008" fill="none"/><path d="M 0 1056 Q 600 1081 1200 1056" fill="none"/><path d="M 0 1104 Q 600 1129 1200 1104" fill="none"/><path d="M 0 1152 Q 600 1177 1200 1152" fill="none"/>
+        </g>
+      
+  <rect x="0" y="1040" width="1200" height="160" fill="#1E1C1A" opacity="0.8"/>
+  <text x="60" y="1120" font-family="'Young Serif', serif" font-size="34" fill="#F7F2E8">FUMED OAK</text>
+  <text x="60" y="1160" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#D7CDBD" letter-spacing="2">QUARTER-SAWN / NATURAL WAX</text>
+</svg>
